@@ -13,7 +13,7 @@ $article = $db->query('SELECT * FROM article');
 var_dump($article);
 
 ?>
-
+dsqdqs
 <html>
 <head>
     <title>LDM</title>
