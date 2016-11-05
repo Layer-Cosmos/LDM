@@ -2,20 +2,31 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: 'geosanslightregular';
+    src: url('../fonts/geosanslight-oblique-webfont.woff'),
+    url('../fonts/geosanslight-oblique-webfont.woff2'),
+    url('../fonts/geosanslight-webfont.woff'),
+    url('../fonts/geosanslight-webfont.woff2');
+}
 body{
+    font-family: GeosansLight;
+    background-image: url("../images/motif.jpg");
+    width: 100%;
 
 }
 /*Menu*/
 #menu{
     width:300px;
-    height: 1000px;
+    height: 100%;
     background-color: #0FB5B5;
     color: white;
     font-size: 50px;
 }
 .logo{
     width: 250px;
-    margin-left: 20px;
+    display: block;
+    margin: auto;
     margin-top: 100px;
     border-bottom: 2px solid white;
     padding-bottom: 50px;
