@@ -15,15 +15,15 @@
 </head>
 <body>
     <div id="menu">
-        <img class="logo" src="https://www.dropbox.com/s/rdi3f53np3nkkxw/logoldm.png?dl=0" alt="Logo Laure De Malibran"/>
+        <img class="logo" src="images/logoldm.png" alt="Logo Laure De Malibran"/>
         <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Biographie</a></li>
             <li><a href="#">Galerie</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        <a class="reseaux" href="#"><img src="https://photos-5.dropbox.com/t/2/AADShBeNTWE36GpOSKFXXMbVddwxukIzZ8EKt-ubEz95Ww/12/286381322/png/32x32/1/_/1/2/Facebook.png/EIS5lfIEGOZwIAIoAg/rdzWTL9CSk_K0drNCfKylqoncPs1d17vWILkk6gU8Oc?size=2048x1536&size_mode=3" alt="Reseaux sociaux : Facebook"/></a>
-        <a class="reseaux" href="#"><img src="https://www.dropbox.com/s/6lzfe8jt36kctst/Pinterest.png?dl=0" alt="Reseaux sociaux : Pinterest"/></a>
+        <a class="reseaux" href="#"><img src="images/facebook.png" alt="Reseaux sociaux : Facebook"/></a>
+        <a class="reseaux" href="#"><img src="images/pinterest.png" alt="Reseaux sociaux : Pinterest"/></a>
         <p>Copyright &copy;<br>
             <a href="#">Pierre-Yves Lotode</a> - <a href="#">Kevin Alary</a> - <a href="#">Claire Erhard</a></p>
 
