@@ -27,7 +27,7 @@ body{
     width: 250px;
     display: block;
     margin: auto;
-    margin-top: 100px;
+    padding-top: 100px;
     border-bottom: 2px solid white;
     padding-bottom: 50px;
 }
@@ -40,12 +40,11 @@ body{
 #menu li{
     margin-bottom: 20px;
 }
-
-.reseaux img{
+#reseaux img{
     width: 50px;
     height: 50px;
-    margin-left: 20px;
-    margin-bottom: 220px;
+    margin-bottom: 153px;
+    margin-top: 50px;
 }
 #menu p{
     font-size: 12px;

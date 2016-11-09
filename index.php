@@ -22,12 +22,14 @@
             <li><a href="#">Galerie</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        <div id="reseaux">
         <a class="reseaux" href="#"><img src="images/facebook.png" alt="Reseaux sociaux : Facebook"/></a>
         <a class="reseaux" href="#"><img src="images/pinterest.png" alt="Reseaux sociaux : Pinterest"/></a>
+        </div>
         <p>Copyright &copy;<br>
-            <a href="#">Pierre-Yves Lotode</a> - <a href="#">Kevin Alary</a> - <a href="#">Claire Erhard</a></p>
+        <a href="#">Pierre-Yves Lotode</a> - <a href="#">Kevin Alary</a> - <a href="#">Claire Erhard</a></p>
 
-    </div>vyhifvyik
+    </div>
 
 
 </body>
