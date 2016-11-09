@@ -27,7 +27,7 @@
         <p>Copyright &copy;<br>
             <a href="#">Pierre-Yves Lotode</a> - <a href="#">Kevin Alary</a> - <a href="#">Claire Erhard</a></p>
 
-    </div>
+    </div>vyhifvyik
 
 
 </body>
