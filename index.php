@@ -14,23 +14,33 @@
     <link href="css/style.css" rel=stylesheet media="screen"/>
 </head>
 <body>
-    <div id="menu">
-        <img class="logo" src="images/logoldm.png" alt="Logo Laure De Malibran"/>
-        <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Biographie</a></li>
-            <li><a href="#">Galerie</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div id="reseaux">
-        <a class="reseaux" href="#"><img src="images/facebook.png" alt="Reseaux sociaux : Facebook"/></a>
-        <a class="reseaux" href="#"><img src="images/pinterest.png" alt="Reseaux sociaux : Pinterest"/></a>
+    <header>
+        <div id="menu">
+            <img class="logo" src="images/logoldm.png" alt="Logo Laure De Malibran"/>
+            <ul>
+                <li class="choix"><a href="#">Accueil</a></li>
+                <li><a href="#">Biographie</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div id="reseaux">
+                <a class="reseaux" href="#"><img src="images/facebook.png" alt="Reseaux sociaux : Facebook"/></a>
+                <a class="reseaux" href="#"><img src="images/pinterest.png" alt="Reseaux sociaux : Pinterest"/></a>
+            </div>
+            <p>Copyright &copy;<br>
+                <a href="#">Pierre-Yves Lotode</a> - <a href="#">Kevin Alary</a> - <a href="#">Claire Erhard</a></p>
         </div>
-        <p>Copyright &copy;<br>
-        <a href="#">Pierre-Yves Lotode</a> - <a href="#">Kevin Alary</a> - <a href="#">Claire Erhard</a></p>
+    </header>
+    <section>
+        <h1>A la une</h1>
+        <article id="article">
+            <img src="images/africaine.jpg">
+            <h3>Titre article</h3>
+            <h4>> 30 octobre 2016</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ligula quis velit mattis cursus a eu ex. Etiam tempus tristique ligula quis laoreet. Aliquam vitae rutrum mi. Nulla tincidunt id justo vitae accumsan. Mauris tempor ac lorem eget sodales. Quisque gravida, leo eu feugiat ullamcorper, leo sem tempus orci, non aliquam nibh lacus eu turpis. Donec ut feugiat felis. Cras vel neque eu erat malesuada venenatis vitae vitae nulla. Quisque mollis in risus eu varius.<br><br><span><a href="#">En savoir plus</a></span> </p>
 
-    </div>
-
+        </article>
+    </section>
 
 </body>
 </html>

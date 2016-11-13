@@ -21,10 +21,11 @@ body{
     height: 100%;
     background-color: #0FB5B5;
     color: white;
-    font-size: 50px;
+    font-size: 3rem;
+    position: fixed;
 }
 .logo{
-    width: 250px;
+    width: 83.33333333333334%;
     display: block;
     margin: auto;
     padding-top: 100px;
@@ -33,7 +34,7 @@ body{
 }
 #menu ul{
     list-style-type: none;
-    margin-left: 10px;
+    margin-left: 3.3333333333333335%;
     text-align: center;
     margin-top: 100px;
 }
@@ -41,17 +42,63 @@ body{
     margin-bottom: 20px;
 }
 #reseaux img{
-    width: 50px;
-    height: 50px;
-    margin-bottom: 153px;
+    width: 11.666666666666666%;
+    height: 11.666666666666666%;
+    margin-bottom: 191px;
     margin-top: 50px;
 }
 #menu p{
-    font-size: 12px;
+    font-size: 0.8rem;
     text-align: center;
 }
 #menu a{
     color: white;
     text-decoration: none;
 }
+.choix{
+    background-image: url("images/fleche-menu.png");
+}
+/*Articles*/
+section{
+    padding-top: 100px;
+    margin-left: 400px;
+}
+section h1{
+    margin-left: 540px;
+    font-size: 80px;
+    color: #0fb5b5;
+}
+#article{
+    width: 750px;
+    background-color: white;
+    box-shadow: 8px 8px 12px #929292;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+}
+#article img{
+    display: inline-block;
+    width: 270px;
+    box-shadow: 1px 1px 12px #929292;
+    margin-right: 50px;
+    float: left;
+}
+#article h3{
+    font-size: 45px;
+    color: #0fb5b5;
+}
+#article h4{
+    font-size: 24px;
+    color: #0fb5b5;
+}
+#article p{
+    text-align: justify;
+}
+#article a{
+    font-size: 18px;
+    color: #0fb5b5;
+}
+
 
