@@ -37,7 +37,7 @@
             <img src="images/africaine.jpg">
             <h3>Titre article</h3>
             <h4>> 30 octobre 2016</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ligula quis velit mattis cursus a eu ex. Etiam tempus tristique ligula quis laoreet. Aliquam vitae rutrum mi. Nulla tincidunt id justo vitae accumsan. Mauris tempor ac lorem eget sodales. Quisque gravida, leo eu feugiat ullamcorper, leo sem tempus orci, non aliquam nibh lacus eu turpis. Donec ut feugiat felis. Cras vel neque eu erat malesuada venenatis vitae vitae nulla. Quisque mollis in risus eu varius.<br><br><span><a href="#">En savoir plus</a></span> </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ligula quis velit mattis cursus a eu ex. Etiam tempus tristique ligula quis laoreet. Aliquam vitae rutrum mi. Nulla tincidunt id justo vitae accumsan. Mauris tempor ac lorem eget sodales. Quisque gravida, leo eu feugiat ullamcorper, leo sem tempus orci, non aliquam nibh lacus eu turpis. Donec ut feugiat felis. Cras vel neque eu erattest malesuada venenatis vitae vitae nulla. Quisque mollis in risus eu varius.<br><br><span><a href="#">En savoir plus</a></span> </p>
 
         </article>
     </section>
