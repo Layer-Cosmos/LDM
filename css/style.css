@@ -91,6 +91,10 @@ section h1{
     box-shadow: 8px 8px 12px #929292;
     padding: 30px;
     display: block;
+    overflow: auto;
+}
+#image{
+
 }
 #article img{
     display: inline-block;
@@ -153,11 +157,18 @@ aside h2{
     color: #0fb5b5;
     float: left;
 }
-#dessous ul li{
+#dessous ul{
+    margin:10px;
+    width: 100%;
+}
+#dessous li{
     list-style-type: none;
     display: inline;
-    margin:10px;
-    width: 30px;
+}
+#dessous li:first-child{
+    list-style-type: none;
+    display: inline;
+    margin-right: 65%;
 }
 .commentaire{
     width:20px ;

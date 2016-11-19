@@ -34,7 +34,7 @@
 <section>
     <h1>A la une</h1>
     <article id="article">
-        <img src="images/africaine.jpg">
+        <div id="image"><img src="images/africaine.jpg"></div>
         <div id="contenu-article">
             <h3>Titre article</h3>
             <h4>> 30 octobre 2016</h4>
