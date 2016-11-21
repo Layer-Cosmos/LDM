@@ -13,12 +13,15 @@ body{
     font-family: GeosansLight;
     background-image: url("../images/motif.jpg");
     width: 100%;
+    background-color: black;
+    /*min-height: 900px;*/
 
 }
 /*Menu*/
 #menu{
     width:300px;
-    height: 100%;
+    /*height: 100%;*/
+    /*min-height: 900px;*/
     background-color: #0FB5B5;
     color: white;
     font-size: 3rem;
@@ -44,6 +47,36 @@ body{
 #menu a:hover{
     border-bottom: white 2px solid;
 }
+.choix{
+    background-color: white;
+    border-bottom: #0FB5B5 solid 4px;
+    border-left: #0FB5B5 solid 5px;
+    border-top: #0FB5B5 solid 4px;
+    color: #0FB5B5;
+}
+#test{
+    width: 0px;
+    height: 0px;
+    float: right;
+    border-top: transparent solid 36px;
+    border-left: #0FB5B5 solid 36px;
+    /*border-right: transparent solid 36px;*/
+    border-bottom: transparent solid 36px;
+    position: relative;
+    left: 36px;
+    top: -7px;
+}
+#test2{
+    width: 0px;
+    height: 0px;
+    border-top: transparent solid 29px;
+    border-left: white solid 29px;
+    /*border-right: transparent solid 30px;*/
+    border-bottom: transparent solid 29px;
+    position: relative;
+    left: -36px;
+    top: -29px;
+}
 #reseaux{
     /*margin-bottom: 191px;*/
     /*margin-top: 50px;*/
@@ -61,16 +94,8 @@ body{
 #menu a{
     color: white;
     text-decoration: none;
+    text-align: center;
 }
-.choix a{
-    color: #0FB5B5;
-    background-color: white;
-    border: 2px solid #0FB5B5;
-}
-.choix a{
-
-}
-
 
 /*Articles*/
 section{
@@ -78,6 +103,8 @@ section{
     margin-left: 2.604166666666667%;
     /*background-color: red;*/
     float: left;
+    min-height: 1900px;
+    overflow: scroll;
 
 }
 section h1{
