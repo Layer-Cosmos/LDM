@@ -9,7 +9,7 @@
 
 //use \PDO;
 
-//namespace App;
+namespace Ldm;
 
 class Database
 {
