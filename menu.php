@@ -18,10 +18,10 @@
         <div id="menu">
             <img class="logo" src="images/logoldm.png" alt="Logo Laure De Malibran"/>
             <ul>
-                <a href="#"><li class="choix">Accueil<div id="test"><div id="test2"></div></div></li></a>
+                <a href="index.php"><li class="choix">Accueil<div id="test"><div id="test2"></div></div></li></a>
                 <li><a href="#">Biographie</a></li>
                 <li><a href="#">Galerie</a></li>
-                <li><a href="#">Contact</a></li>
+                <a href="contact.php"><li>Contact</li></a>
             </ul>
             <div id="reseaux">
                 <a class="reseaux" href="#"><img src="images/facebook.png" alt="Reseaux sociaux : Facebook"/></a>
