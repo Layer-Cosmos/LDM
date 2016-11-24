@@ -278,3 +278,16 @@ fieldset label{
 fieldset p{
     margin-bottom: 15px;
 }
+
+
+/*PAGE BIOGRAPHIE*/
+#bio{
+    overflow: none;
+    float: left;
+}
+#dates{
+    background-color: #0fb5b5;
+    color: white;
+    width: 300px;
+    float: left;
+}

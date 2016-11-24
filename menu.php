@@ -19,7 +19,7 @@
             <img class="logo" src="images/logoldm.png" alt="Logo Laure De Malibran"/>
             <ul>
                 <a href="index.php"><li class="choix">Accueil<div id="test"><div id="test2"></div></div></li></a>
-                <li><a href="#">Biographie</a></li>
+                <a href="biographie.php"><li>Biographie</li></a>
                 <li><a href="#">Galerie</a></li>
                 <a href="contact.php"><li>Contact</li></a>
             </ul>
