@@ -1,8 +1,11 @@
 <?php include 'menu.php'; ?>
-<h1>Contact</h1>
-<div id="coordonnee">
-    <h2>Laure De Malibran</h2>
-    <p>4 allée Gerard de Nerval <br>56000 Vannes<br>Numéro de téléphone<br>ldm56@hotmail.com<br></p>
+
+<div class="col-lg-offset-1 col-lg-2" >
+    <h1>Contact</h1>
+        <article id="coordonnee">
+            <h2>Laure De Malibran</h2>
+            <p>4 allée Gerard de Nerval <br>56000 Vannes<br>Numéro de téléphone<br>ldm56@hotmail.com<br></p>
+        </article>
 </div>
 <div id="formulaire">
     <fieldset>
