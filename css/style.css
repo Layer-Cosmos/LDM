@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: 'geosanslightregular';
-    src: url('../fonts/geosanslight-oblique-webfont.woff'),
+    src: url('/fonts/geosanslight-oblique-webfont.woff'),
     url('../fonts/geosanslight-oblique-webfont.woff2'),
     url('../fonts/geosanslight-webfont.woff'),
     url('../fonts/geosanslight-webfont.woff2');
@@ -20,16 +20,14 @@ h1{
     font-size: 80px;
     color: #0fb5b5;
     margin-top: 100px;
-    margin-left: 2.604166666666667%;
-    /*background-color: red;*/
-    float: left;
+    /*float: left;*/
 }
 
 
 
 /*MENU*/
 #menu{
-    width:300px;
+    /**/
     /*height: 100%;*/
     /*min-height: 900px;*/
     background-color: #0FB5B5;
@@ -73,7 +71,7 @@ h1{
     /*border-right: transparent solid 36px;*/
     border-bottom: transparent solid 36px;
     position: relative;
-    left: 36px;
+    left: 46px;
     top: -7px;
 }
 #test2{
@@ -84,7 +82,7 @@ h1{
     /*border-right: transparent solid 30px;*/
     border-bottom: transparent solid 29px;
     position: relative;
-    left: -36px;
+    left: -46px;
     top: -29px;
 }
 #reseaux{
@@ -109,22 +107,20 @@ h1{
 
 
 
-
 /*ACCUEIL*/
 section{
-    margin-top: 100px;
-    margin-left: 2.604166666666667%;
-    /*background-color: red;*/
-    float: left;
-    min-height: 1900px;
+    width: 500px;
+    /*float: left;*/
     overflow: scroll;
+    overflow-x: hidden ;
+    height: 800px;
 
 }
-section h1{
-    margin-left: 540px;
-    font-size: 80px;
-    color: #0fb5b5;
-}
+/*section h1{*/
+    /*margin-left: 540px;*/
+    /*font-size: 80px;*/
+    /*color: #0fb5b5;*/
+/*}*/
 #article{
     width: 750px;
     background-color: white;
@@ -133,18 +129,16 @@ section h1{
     display: block;
     overflow: auto;
 }
-#image{
-
-}
 #article img{
     display: inline-block;
     width: 270px;
     box-shadow: 1px 1px 12px #929292;
     margin-right: 50px;
     float: left;
+    margin-bottom: 50px;
 }#contenu-article{
     display: block;
- }
+}
 #contenu-article h3{
     font-size: 45px;
     color: #0fb5b5;
@@ -167,18 +161,16 @@ section h1{
     clear: left;
     align: right;
 }
-
 aside{
-    /*background-color: yellow;*/
-    float: left;
-    margin-left: 7.5%;
-    width: 400px;
+    height: 800px;
     border-left: solid 10px #0FB5B5;
-    padding-left: 7.5%;
-    margin-top: 153px;
+    margin-top: 115px;
+    /*padding-left: 7%;*/
+    overflow-y: scroll;
+    overflow-x:hidden ;
 }
 aside h2{
-    margin-left: 50px;
+    text-align: center;
     font-size: 45px;
     color: #0fb5b5;
 }
@@ -186,16 +178,20 @@ aside h2{
     width: 300px;
     background-color: white;
     box-shadow: 8px 8px 12px #929292;
-    padding: 20px;
     display: block;
 }
 #dernier-note img{
     width: 300px;
+
 }
 #dernier-note h4{
     font-size: 20px;
     color: #0fb5b5;
     float: left;
+}
+#dessous{
+    color: #0fb5b5;
+    font-size: 1.8rem;
 }
 #dessous ul{
     margin:10px;
@@ -208,7 +204,7 @@ aside h2{
 #dessous li:first-child{
     list-style-type: none;
     display: inline;
-    margin-right: 65%;
+    margin-right: 60%;
 }
 .commentaire{
     width:20px ;
@@ -239,21 +235,16 @@ aside h2{
 
 /*PAGE CONTACT*/
 #coordonnee{
-    margin-top: 100px;
-    margin-left: 2.604166666666667%;
-    float: left;
-    width: 180px;
     background-color: white;
     box-shadow: 8px 8px 12px #929292;
     padding: 30px;
 }
 #coordonnee h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #0fb5b5;
     font-weight: bold;
 }
 #formulaire{
-
     margin-top: 200px;
     margin-left: 2.604166666666667%;
     float: left;
@@ -280,14 +271,18 @@ fieldset p{
 }
 
 
-/*PAGE BIOGRAPHIE*/
-#bio{
-    overflow: none;
-    float: left;
+
+
+
+
+
+
+@media (min-width: @screen-sm-min) {
+
 }
-#dates{
-    background-color: #0fb5b5;
-    color: white;
-    width: 300px;
-    float: left;
+@media (min-width: @screen-md-min) {
+
+}
+@media (min-width: @screen-lg-min) {
+
 }

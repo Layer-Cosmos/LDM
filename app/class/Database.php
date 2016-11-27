@@ -7,9 +7,9 @@
  * Time: 18:35
  */
 
-//use \PDO;
-
 namespace Ldm;
+
+use \PDO;
 
 class Database
 {
