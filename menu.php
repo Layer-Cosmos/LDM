@@ -13,8 +13,8 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel=stylesheet media="screen"/>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel=stylesheet media="screen"/>
 </head>
 <body>
     <header>
