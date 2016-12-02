@@ -7,29 +7,33 @@
  */
 require 'app/Autoloader.php';
 
-Ldm\Autoloader::register();
+App\Autoloader::register();
 
-$db = new Ldm\Database('ldm');
+$db = new App\Database('ldm');
 
-var_dump($db);
 
 $db->query('SELECT * FROM article');
 
-var_dump($db);
 
-//$content = ob_start();
-//
-//if(isset($_GET['p'])){
-//    $p = $_GET['p'];
-//}else{
-//    $p = 'home';
-//}
-//
-//if($p === 'home'){
-//    require 'public/home.php';
-//}
-//elseif($p === 'single'){
-//    require 'public/single.php';
-//}
-//$content = ob_get_clean();
-//require 'public/template/default.php';
+$content = ob_start();
+
+if(isset($_GET['p'])){
+    $p = $_GET['p'];
+}else{
+    $p = 'home';
+}
+
+if($p === 'home'){
+    require 'public/home.php';
+}
+elseif($p === 'single'){
+    require 'public/single.php';
+}
+elseif($p === 'admin'){
+    require 'public/menu-admin.php';
+}
+else{
+    require 'public/home.php';
+}
+$content = ob_get_clean();
+require 'public/template/default.php';
