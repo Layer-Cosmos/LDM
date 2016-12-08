@@ -13,8 +13,8 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/style.css" rel=stylesheet media="screen"/>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel=stylesheet media="screen"/>
 </head>
 <body>
     <header>
@@ -23,7 +23,7 @@
             <ul>
                 <a href="index.php"><li class="choix">Accueil<div id="test"><div id="test2"></div></div></li></a>
                 <a href="biographie.php"><li>Biographie</li></a>
-                <li><a href="#">Galerie</a></li>
+                <li><a href="galerie.php">Galerie</a></li>
                 <a href="contact.php"><li>Contact</li></a>
             </ul>
             <div id="reseaux">
