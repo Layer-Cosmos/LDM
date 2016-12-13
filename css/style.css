@@ -13,7 +13,7 @@ body{
     font-family: GeosansLight;
     background-image: url("../images/motif.jpg");
     width: 100%;
-    background-color: black;
+    /*background-color: black;*/
     /*min-height: 900px;*/
 }
 h1{
@@ -136,7 +136,8 @@ section{
     margin-right: 50px;
     float: left;
     margin-bottom: 50px;
-}#contenu-article{
+}
+#contenu-article{
     display: block;
 }
 #contenu-article h3{
@@ -149,10 +150,6 @@ section{
 }
 #contenu-article p{
     text-align: justify;
-}
-#contenu-article a{
-    font-size: 18px;
-    color: #0fb5b5;
 }
 #contenu-article span{
     text-align: right;
@@ -273,10 +270,76 @@ fieldset p{
 
 
 /*PAGE BIOGRAPHIE*/
-#portrait img{
-    width: 100px;
+#bio{
+    height: auto;
 }
+#portrait img{
 
+
+}
+#texte-bio{
+    text-align: justify;
+}
+#dates{
+    background-color: #0fb5b5;
+    margin-top: 2%;
+}
+#titre-dates{
+    color: white;
+}
+#liste-dates{
+    list-style-type: none;
+    color: white;
+}
+#partenaire{
+    background-color: white;
+    border: solid 2px #0fb5b5;
+    position: relative;
+    left: -5%;
+    bottom: 10%;
+}
+#titre-artiste{
+    color: #0fb5b5;
+}
+#liste-artiste{
+    list-style-type: none;
+    color: #0fb5b5;
+}
+#liste-artiste li{
+    display: inline;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 1.6rem;
+
+}
+#liste-artiste a{
+    color: #0fb5b5;
+
+}
+#liste-artiste a li:hover{
+    background-color: #0fb5b5;
+    color: white;
+}
+/*PAGE GALERIE*/
+#galerie{
+    margin-top: 100px;
+    height: 900px;
+    overflow-y: scroll;
+    overflow-x:hidden ;
+}
+#galerie h1{
+    margin-top: 0;
+    margin: 1%;
+    padding: 0;
+    width: 300px;
+}
+#galerie img{
+    box-shadow: 1px 1px 12px #929292;
+    margin: 1%;
+    padding: 0;
+    text-align: center;
+    width: 300px;
+}
 
 
 

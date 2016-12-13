@@ -4,7 +4,7 @@
     <article id="article">
         <div id="image"><img src="images/<?= $post->image; ?>"></div>
         <div id="contenu-article">
-           <h3><?= $post->titreUp(); ?></h3>
+           <h3><a href="#" data-toggle="modal" data-target="#myModal"><?= $post->titreUp(); ?></a></h3>
            <h4>><?= $post->date; ?></h4>
            <p><?= $post->contenu; ?><br><br><span><a href="#">En savoir plus</a></span></p>
         </div>

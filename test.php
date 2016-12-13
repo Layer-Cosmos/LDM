@@ -6,6 +6,7 @@
  * Time: 01:18
  */
 require 'app/Autoloader.php';
+date_default_timezone_set('Europe/Paris');
 
 App\Autoloader::register();
 
@@ -24,6 +25,7 @@ if(isset($_GET['p'])){
 }
 
 if($p === 'home'){
+    require 'public/modal.php';
     require 'public/home.php';
 }
 elseif($p === 'single'){
@@ -32,7 +34,20 @@ elseif($p === 'single'){
 elseif($p === 'admin'){
     require 'public/menu-admin.php';
 }
+elseif($p === 'biographie'){
+    require 'public/biographie.php';
+}
+elseif($p === 'galerie'){
+    require  'public/galerie.php';
+}
+elseif($p === 'contact'){
+    require  'public/contact.php';
+}
+elseif($p === 'color'){
+    require 'public/color.php';
+}
 else{
+    require 'public/modal.php';
     require 'public/home.php';
 }
 $content = ob_get_clean();

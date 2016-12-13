@@ -22,14 +22,82 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../../public/js/bootstrap.js"></script>
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/style.css" rel=stylesheet media="screen"/>
 </head>
 
 <style>
-
+    <?php foreach($db->query('SELECT color FROM admin', 'App\Table\Article') as $style): ?>
+    h1{
+        color: <?= $style->color ?>;
+    }
+    #menu{
+        background-color: <?= $style->color ?>;
+    }
+    .choix{
+        border-top-color: <?= $style->color ?>;
+        border-bottom-color: <?= $style->color ?>;
+        border-left-color: <?= $style->color ?>;
+        color: <?= $style->color ?>;
+    }
+    #test{
+        border-left-color: <?= $style->color ?>;
+    }
+    #contenu-article h3{
+        color: <?= $style->color ?>;
+    }
+    #contenu-article h4{
+        color: <?= $style->color ?>;
+    }
+    #contenu-article a{
+        color: <?= $style->color ?>;
+    }
+    aside{
+        border-left-color: <?= $style->color ?>;
+    }
+    aside h2{
+        color: <?= $style->color ?>;
+    }
+    <?php endforeach; ?>
     section::-webkit-scrollbar {
         display: none;
+    }
+    #dernier-note h4{
+        color: <?= $style->color ?>;
+    }
+    #dessous{
+        color: <?= $style->color ?>;
+    }
+    /*PAGE CONTACT*/
+    #coordonnee h2{
+        color: <?= $style->color ?>;
+    }
+    #formulaire{
+        border-left-color: <?= $style->color ?>;
+    }
+    fieldset label{
+        color: <?= $style->color ?>;
+    }
+    /*PAGE BIOGRAPHIE*/
+    #dates{
+        background-color: <?= $style->color ?>;
+    }
+    #partenaire{
+        border-color: <?= $style->color ?>;
+    }
+    #titre-artiste{
+        color: <?= $style->color ?>;
+    }
+    #liste-artiste{
+        color: <?= $style->color ?>;
+    }
+    #liste-artiste a{
+        color: <?= $style->color ?>;
+    }
+    #liste-artiste a li:hover{
+        background-color: <?= $style->color ?>;
     }
 
 </style>
@@ -38,10 +106,10 @@
     <div class="container col-lg-2" id="menu">
         <img class="logo" src="images/logoldm.png" alt="Logo Laure De Malibran"/>
         <ul>
-            <a href="index.php"><li class="choix">Accueil<div id="test"><div id="test2"></div></div></li></a>
-            <a href="biographie.php"><li>Biographie</li></a>
-            <li><a href="#">Galerie</a></li>
-            <a href="contact.php"><li>Contact</li></a>
+            <a href="test.php"><li class="choix">Accueil<div id="test"><div id="test2"></div></div></li></a>
+            <a href="test.php?p=biographie"><li>Biographie</li></a>
+            <li><a href="test.php?p=galerie">Galerie</a></li>
+            <a href="test.php?p=contact"><li>Contact</li></a>
         </ul>
         <div id="reseaux">
             <a class="reseaux" href="#"><img src="images/facebook.png" alt="Reseaux sociaux : Facebook"/></a>

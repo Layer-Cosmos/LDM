@@ -41,10 +41,6 @@ class Database
     {
         $req = $this->getPDO()->query($sql);
 
-        if(strpos($sql, 'INSERT') === 0){
-
-        }
-
         if($class_name === null){
             $datas = $req->fetchAll(PDO::FETCH_OBJ);
         }else{
@@ -55,10 +51,11 @@ class Database
     }
 
     public function prepare($sql, $attributes, $class_name = null, $one = false){
+        var_dump($sql);
+        var_dump($attributes);
         $req = $this->getPDO()->prepare($sql);
         $res = $req->execute($attributes);
-
-        if(strpos($sql, 'INSERT') === 0){
+        if(strpos($sql, 'INSERT') === 0 || strpos($sql, 'UPDATE') === 0){
             return $res;
         }
 
@@ -72,7 +69,6 @@ class Database
         } else{
             $datas = $req->fetchAll();
         }
-
         return $datas;
     }
 
@@ -81,6 +77,7 @@ class Database
         $this->prepare($sql, $attributes, $class_name, $one);
         $uploadDir = 'C:\wamp64\www\LDMGIT\images\\';
         $uploadFile = $uploadDir . basename($file['name']);
+
         if(move_uploaded_file($file['tmp_name'], $uploadFile)){
             return true;
         } else{

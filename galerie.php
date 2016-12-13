@@ -1,15 +1,51 @@
 <?php include 'menu.php'; ?>
-<div id="galerie" class="col-lg-offset-1 col-lg-8" >
-    <h1 class="col-lg-3">Galerie</h1>
-    <img class="col-lg-3" src="images/africaine.jpg">
-    <img class="col-lg-3" src="images/poisson-rouge.jpg">
-    <img class="col-lg-3" src="images/poissons.jpg">
-    <img class="col-lg-3" src="images/bouddha.jpg">
-    <img class="col-lg-3" src="images/cheval.jpg">
-    <img class="col-lg-3" src="images/fleurs.jpg">
-    <img class="col-lg-3" src="images/tigre.jpg">
-    <img class="col-lg-3" src="images/bateau.jpg">
-    <img class="col-lg-3" src="images/orange.jpg">
-    <img class="col-lg-3" src="images/geisha.jpg">
-    <img class="col-lg-3" src="images/rose.jpg">
+<style>
+    .item {
+        width: 200px;
+        padding-bottom: 30px;
+        background-color: #0fb5b5;
+        display: inline-block;
+    }
+    .item img{
+        display: block;
+        width: 100%;
+    }
+</style>
+<div id="images">
+    <div class="item">
+        <img src="http://lorempixel.com/425/299/nature">
+    </div>
+    <div class="item">
+        <img src="http://lorempixel.com/190/292/nature">
+    </div>
+    <div class="item">
+        <img src="http://lorempixel.com/520/329/nature">
+    </div>
+    <div class="item">
+        <img src="http://lorempixel.com/404/176/nature">
+    </div>
+    <div class="item">
+        <img src="http://lorempixel.com/530/290/nature">
+    </div>
+    <div class="item">
+        <img src="http://lorempixel.com/228/200/nature">
+    </div>
+    <div class="item">
+        <img src="http://lorempixel.com/207/316/nature">
+    </div>
+    <div class="item">
+        <img src="http://lorempixel.com/435/162/nature">
+    </div>
+    <div class="item">
+        <img src="http://lorempixel.com/376/175/nature">
+    </div>
+    <div class="item">
+        <img src="http://lorempixel.com/508/338/nature">
+    </div>
+    <div class="item">
+        <img src="http://lorempixel.com/404/389/nature">
+    </div>
+    <div class="item">
+        <img src="http://lorempixel.com/216/304/nature">
+    </div>
 </div>
