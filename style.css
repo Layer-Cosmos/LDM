@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'geosanslightregular';
+    src: url('/fonts/geosanslight-oblique-webfont.woff'),
+    url('../fonts/geosanslight-oblique-webfont.woff2'),
+    url('../fonts/geosanslight-webfont.woff'),
+    url('../fonts/geosanslight-webfont.woff2');
+}
+body{
+    font-family: GeosansLight;
+    background-image: url("../images/motif.jpg");
+    width: 100%;
+    background-color: black;
+    /*min-height: 900px;*/
+}
+h1{
+    font-size: 80px;
+    color: #0fb5b5;
+    margin-top: 100px;
+    /*float: left;*/
+}
+/*MENU*/
+#menu{
+    min-height: 900px;
+    background-color: #0fb5b5;
+    color: white;
+    font-size: 3rem;
+}
+.logo{
+    width: 83%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    border-bottom: 2px solid white;
+    padding-bottom: 50px;
+}
+#onglet-menu ul{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 100px;
+}
+#onglet-menu li {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+#onglet-menu a:hover{
+    border-bottom: white 2px solid;
+}
+.onglet-choisi{
+    color: #0fb5b5;
+    background-color: white;
+}
+/*FLECHE*/
+/*.choix{*/
+    /*background-color: white;*/
+    /*border-bottom: #0FB5B5 solid 4px;*/
+    /*border-left: #0FB5B5 solid 5px;*/
+    /*border-top: #0FB5B5 solid 4px;*/
+    /*color: #0FB5B5;*/
+/*}*/
+/*#test{*/
+    /*width: 0px;*/
+    /*height: 0px;*/
+    /*float: right;*/
+    /*border-top: transparent solid 36px;*/
+    /*border-left: #0FB5B5 solid 36px;*/
+    /*!*border-right: transparent solid 36px;*!*/
+    /*border-bottom: transparent solid 36px;*/
+    /*position: relative;*/
+    /*left: 46px;*/
+    /*top: -7px;*/
+/*}*/
+/*#test2{*/
+    /*width: 0px;*/
+    /*height: 0px;*/
+    /*border-top: transparent solid 29px;*/
+    /*border-left: white solid 29px;*/
+    /*!*border-right: transparent solid 30px;*!*/
+    /*border-bottom: transparent solid 29px;*/
+    /*position: relative;*/
+    /*left: -46px;*/
+    /*top: -29px;*/
+/*}*/
+#reseaux-sociaux{
+    margin-top: 20%;
+    text-decoration: none;
+    text-align: center;
+}
+#reseaux-sociaux img{
+    width: 11.666666666666666%;
+    height: 11.666666666666666%;
+}
+#copyright p{
+    margin-top: 32%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#copyright a{
+    color: white;
+    text-align: center;
+}
+
+
+
+/*ACCUEIL*/
+#contenu-page-accueil{
+    overflow: scroll;
+    overflow-x: hidden ;
+    height: 920px;
+}
+#partie-article h1{
+    margin-left: 63.5%;
+}
+#article{
+    width: 750px;
+    background-color: white;
+    box-shadow: 8px 8px 12px #929292;
+    padding: 30px;
+    display: block;
+    margin-bottom: 3%;
+}
+#article img{
+    display: inline-block;
+    width: 270px;
+    box-shadow: 1px 1px 12px #929292;
+    margin-right: 50px;
+    float: left;
+    margin-bottom: 50px;
+}
+#contenu-article{
+    display: block;
+}
+#contenu-article h3{
+    font-size: 45px;
+    color: #0fb5b5;
+}
+#contenu-article h4{
+    font-size: 24px;
+    color: #0fb5b5;
+}
+#contenu-article p{
+    text-align: justify;
+}
+#contenu-article a{
+    font-size: 18px;
+    color: #0fb5b5;
+}
+
+#partie-dernier-note{
+    margin-top: 115px;
+    border-left: solid #0fb5b5 3px ;
+    padding-left: 5%;
+}
+#partie-dernier-note h2{
+    text-align: center;
+    font-size: 45px;
+    color: #0fb5b5;
+}
+#dernier-note{
+    width: 312px;
+    background-color: white;
+    box-shadow: 8px 8px 12px #929292;
+    display: block;
+
+}
+#dernier-note img{
+    text-align: center;
+    width: 312px;
+}
+.info-img-dernier-note{
+    color: #0fb5b5;
+    font-size: 2rem;
+}
+.info-img-dernier-note ul{
+    margin:10px;
+    width: 100%;
+}
+.info-img-dernier-note li{
+    list-style-type: none;
+    display: inline;
+}
+.info-img-dernier-note li:first-child{
+    list-style-type: none;
+    display: inline;
+    margin-right: 50%;
+}
+/*.icon-commentaire{*/
+    /*width:20px ;*/
+    /*height:20px;*/
+    /*background-color: blue;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*border-radius: 10px;*/
+/*}*/
+/*.icon-coeur{*/
+    /*width:20px ;*/
+    /*height:20px;*/
+    /*background-color: orchid;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*border-radius: 10px;*/
+/*}*/
+/*.icon-aimer{*/
+    /*width:20px ;*/
+    /*height:20px;*/
+    /*background-color: olive;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*border-radius: 10px;*/
+/*}*/
+
+
+
+/*PAGE CONTACT*/
+#coordonnee{
+    background-color: white;
+    box-shadow: 8px 8px 12px #929292;
+    padding: 30px;
+}
+#coordonnee h2{
+    font-size: 2rem;
+    color: #0fb5b5;
+    font-weight: bold;
+}
+#formulaire{
+    margin-top: 200px;
+    margin-left: 2.604166666666667%;
+    float: left;
+    width: 500px;
+    border-left: solid 10px #0FB5B5;
+    padding-left: 7.5%;
+}
+fieldset{
+    width: 300px;
+    background-color: white;
+    box-shadow: 8px 8px 12px #929292;
+    padding: 30px;
+    float: left;
+    border: none;
+
+}
+fieldset label{
+    font-size: 1rem;
+    color: #0fb5b5;
+    font-weight: bold;
+}
+fieldset p{
+    margin-bottom: 15px;
+}
+
+
+
+/*PAGE BIOGRAPHIE*/
+#portrait img{
+    width: 100px;
+}
+
+
+
+
+
+
+@media (min-width: @screen-sm-min) {
+
+}
+@media (min-width: @screen-md-min) {
+
+}
+@media (min-width: @screen-lg-min) {
+
+}
