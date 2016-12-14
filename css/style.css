@@ -13,7 +13,7 @@ body{
     font-family: GeosansLight;
     background-image: url("../images/motif.jpg");
     width: 100%;
-    /*background-color: black;*/
+    background-color: black;
     /*min-height: 900px;*/
 }
 h1{
@@ -22,112 +22,106 @@ h1{
     margin-top: 100px;
     /*float: left;*/
 }
-
-
-
 /*MENU*/
 #menu{
-    /**/
-    /*height: 100%;*/
-    /*min-height: 900px;*/
-    background-color: #0FB5B5;
+    min-height: 900px;
+    background-color: #0fb5b5;
     color: white;
     font-size: 3rem;
-    /*position: fixed;*/
-    float: left;
 }
 .logo{
-    width: 83.33333333333334%;
+    width: 83%;
     display: block;
     margin: auto;
     padding-top: 100px;
     border-bottom: 2px solid white;
     padding-bottom: 50px;
 }
-#menu ul{
+#onglet-menu ul{
     list-style-type: none;
     text-align: center;
     margin-top: 100px;
 }
-#menu li {
+#onglet-menu li {
     margin-bottom: 20px;
+    text-align: center;
+    color: white;
 }
-#menu a:hover{
+#onglet-menu a:hover{
     border-bottom: white 2px solid;
 }
-.choix{
+.onglet-choisi{
+    color: #0fb5b5;
     background-color: white;
-    border-bottom: #0FB5B5 solid 4px;
-    border-left: #0FB5B5 solid 5px;
-    border-top: #0FB5B5 solid 4px;
-    color: #0FB5B5;
 }
-#test{
-    width: 0px;
-    height: 0px;
-    float: right;
-    border-top: transparent solid 36px;
-    border-left: #0FB5B5 solid 36px;
-    /*border-right: transparent solid 36px;*/
-    border-bottom: transparent solid 36px;
-    position: relative;
-    left: 46px;
-    top: -7px;
-}
-#test2{
-    width: 0px;
-    height: 0px;
-    border-top: transparent solid 29px;
-    border-left: white solid 29px;
-    /*border-right: transparent solid 30px;*/
-    border-bottom: transparent solid 29px;
-    position: relative;
-    left: -46px;
-    top: -29px;
-}
-#reseaux{
-    /*margin-bottom: 191px;*/
-    /*margin-top: 50px;*/
+/*FLECHE*/
+/*.choix{*/
+    /*background-color: white;*/
+    /*border-bottom: #0FB5B5 solid 4px;*/
+    /*border-left: #0FB5B5 solid 5px;*/
+    /*border-top: #0FB5B5 solid 4px;*/
+    /*color: #0FB5B5;*/
+/*}*/
+/*#test{*/
+    /*width: 0px;*/
+    /*height: 0px;*/
+    /*float: right;*/
+    /*border-top: transparent solid 36px;*/
+    /*border-left: #0FB5B5 solid 36px;*/
+    /*!*border-right: transparent solid 36px;*!*/
+    /*border-bottom: transparent solid 36px;*/
+    /*position: relative;*/
+    /*left: 46px;*/
+    /*top: -7px;*/
+/*}*/
+/*#test2{*/
+    /*width: 0px;*/
+    /*height: 0px;*/
+    /*border-top: transparent solid 29px;*/
+    /*border-left: white solid 29px;*/
+    /*!*border-right: transparent solid 30px;*!*/
+    /*border-bottom: transparent solid 29px;*/
+    /*position: relative;*/
+    /*left: -46px;*/
+    /*top: -29px;*/
+/*}*/
+#reseaux-sociaux{
+    margin-top: 20%;
+    text-decoration: none;
     text-align: center;
 }
-#reseaux img{
+#reseaux-sociaux img{
     width: 11.666666666666666%;
     height: 11.666666666666666%;
-
 }
-#menu p{
-    font-size: 0.8rem;
+#copyright p{
+    margin-top: 32%;
+    font-size: 1.5rem;
     text-align: center;
 }
-#menu a{
+#copyright a{
     color: white;
-    text-decoration: none;
     text-align: center;
 }
 
 
 
 /*ACCUEIL*/
-section{
-    width: 500px;
-    /*float: left;*/
+#contenu-page-accueil{
     overflow: scroll;
     overflow-x: hidden ;
-    height: 800px;
-
+    height: 920px;
 }
-/*section h1{*/
-    /*margin-left: 540px;*/
-    /*font-size: 80px;*/
-    /*color: #0fb5b5;*/
-/*}*/
+#partie-article h1{
+    margin-left: 63.5%;
+}
 #article{
     width: 750px;
     background-color: white;
     box-shadow: 8px 8px 12px #929292;
     padding: 30px;
     display: block;
-    overflow: auto;
+    margin-bottom: 3%;
 }
 #article img{
     display: inline-block;
@@ -151,82 +145,73 @@ section{
 #contenu-article p{
     text-align: justify;
 }
-#contenu-article span{
-    text-align: right;
+#contenu-article a{
+    font-size: 18px;
+    color: #0fb5b5;
 }
-.info{
-    clear: left;
-    align: right;
-}
-aside{
-    height: 800px;
-    border-left: solid 10px #0FB5B5;
+
+#partie-dernier-note{
     margin-top: 115px;
-    /*padding-left: 7%;*/
-    overflow-y: scroll;
-    overflow-x:hidden ;
+    border-left: solid #0fb5b5 3px ;
+    padding-left: 5%;
 }
-aside h2{
+#partie-dernier-note h2{
     text-align: center;
     font-size: 45px;
     color: #0fb5b5;
 }
 #dernier-note{
-    width: 300px;
+    width: 312px;
     background-color: white;
     box-shadow: 8px 8px 12px #929292;
     display: block;
-}
-#dernier-note img{
-    width: 300px;
 
 }
-#dernier-note h4{
-    font-size: 20px;
-    color: #0fb5b5;
-    float: left;
+#dernier-note img{
+    text-align: center;
+    width: 312px;
 }
-#dessous{
+.info-img-dernier-note{
     color: #0fb5b5;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
-#dessous ul{
+.info-img-dernier-note ul{
     margin:10px;
     width: 100%;
 }
-#dessous li{
+.info-img-dernier-note li{
     list-style-type: none;
     display: inline;
 }
-#dessous li:first-child{
+.info-img-dernier-note li:first-child{
     list-style-type: none;
     display: inline;
-    margin-right: 60%;
+    margin-right: 50%;
 }
-.commentaire{
-    width:20px ;
-    height:20px;
-    background-color: blue;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-}
-.coeur{
-    width:20px ;
-    height:20px;
-    background-color: orchid;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-}
-.aimer{
-    width:20px ;
-    height:20px;
-    background-color: olive;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-}
+/*.icon-commentaire{*/
+    /*width:20px ;*/
+    /*height:20px;*/
+    /*background-color: blue;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*border-radius: 10px;*/
+/*}*/
+/*.icon-coeur{*/
+    /*width:20px ;*/
+    /*height:20px;*/
+    /*background-color: orchid;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*border-radius: 10px;*/
+/*}*/
+/*.icon-aimer{*/
+    /*width:20px ;*/
+    /*height:20px;*/
+    /*background-color: olive;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*border-radius: 10px;*/
+/*}*/
 
 
 
@@ -270,76 +255,10 @@ fieldset p{
 
 
 /*PAGE BIOGRAPHIE*/
-#bio{
-    height: auto;
-}
 #portrait img{
+    width: 100px;
+}
 
-
-}
-#texte-bio{
-    text-align: justify;
-}
-#dates{
-    background-color: #0fb5b5;
-    margin-top: 2%;
-}
-#titre-dates{
-    color: white;
-}
-#liste-dates{
-    list-style-type: none;
-    color: white;
-}
-#partenaire{
-    background-color: white;
-    border: solid 2px #0fb5b5;
-    position: relative;
-    left: -5%;
-    bottom: 10%;
-}
-#titre-artiste{
-    color: #0fb5b5;
-}
-#liste-artiste{
-    list-style-type: none;
-    color: #0fb5b5;
-}
-#liste-artiste li{
-    display: inline;
-    text-align: center;
-    margin-top: 2%;
-    font-size: 1.6rem;
-
-}
-#liste-artiste a{
-    color: #0fb5b5;
-
-}
-#liste-artiste a li:hover{
-    background-color: #0fb5b5;
-    color: white;
-}
-/*PAGE GALERIE*/
-#galerie{
-    margin-top: 100px;
-    height: 900px;
-    overflow-y: scroll;
-    overflow-x:hidden ;
-}
-#galerie h1{
-    margin-top: 0;
-    margin: 1%;
-    padding: 0;
-    width: 300px;
-}
-#galerie img{
-    box-shadow: 1px 1px 12px #929292;
-    margin: 1%;
-    padding: 0;
-    text-align: center;
-    width: 300px;
-}
 
 
 
