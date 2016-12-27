@@ -4,7 +4,6 @@ var_dump($_POST);
 var_dump($_FILES);
 if(!empty($_POST)){
 
-
     $db->addFile($_FILES['image'], 'INSERT INTO article(titre, contenu, image, date)
         VALUES (:titre, :contenu, :image, :date)' ,array(
         'titre' => $_POST['titre'],
@@ -12,32 +11,35 @@ if(!empty($_POST)){
         'image' => $_FILES['image']['name'],
         'date' => date('Y-m-d H:i:s')
     ), null, true);
+    $_POST = null;
 }
 $date = date('Y-m-d H:i:s T');
 var_dump($date);
 ?>
-<table class="table">
-    <thead>
-    <tr>
-        <td>Id</td>
-        <td>Titre</td>
-        <td>Date</td>
-        <td>Action</td>
-    </tr>
-    </thead>
-    <tbody>
-    <?php foreach($db->query('SELECT id, titre, date FROM article', 'App\Table\Article') as $post): ?>
-
+<div class="col-lg-6">
+    <table class="table table-bordered table-hover">
+        <thead>
         <tr>
-            <td><?= $post->id; ?></td>
-            <td><?= $post->titre; ?></td>
-            <td><?= $post->date; ?></td>
-            <td> <a class="btn btn-primary">Editer</a></td>
+            <td>Id</td>
+            <td>Titre</td>
+            <td>Date</td>
+            <td>Action</td>
         </tr>
+        </thead>
+        <tbody>
+        <?php foreach($db->query('SELECT id, titre, date FROM article', 'App\Table\Article') as $post): ?>
 
-    <?php endforeach; ?>
-    </tbody>
-</table>
+            <tr>
+                <td><?= $post->id; ?></td>
+                <td><?= $post->titre; ?></td>
+                <td><?= $post->date; ?></td>
+                <td><a class="btn btn-primary">Editer</a> <a data-method="delete" href="delete.php?id=<?= $post->id; ?>" class="btn btn-danger">Supprimer</a></td>
+            </tr>
+
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
 
 
 

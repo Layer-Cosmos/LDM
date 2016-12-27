@@ -11,11 +11,11 @@ foreach($db->prepare('SELECT * FROM article WHERE id = ?', array($_GET['id'])) a
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
                     <h4 class="modal-title" id="myModalLabel"><?= $modal->titre; ?></h4>
                 </div>
                 <div class="modal-body">
-                    <img src="images/<?= $modal->image; ?>" width="400px" style="border-radius: 4px;">
+                    <img class="col-lg-6" src="images/<?= $modal->image; ?>" width="400px" style="border-radius: 4px;">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -25,6 +25,7 @@ h1{
 /*MENU*/
 #menu{
     min-height: 900px;
+    max-height: 100%;
     background-color: #0fb5b5;
     color: white;
     font-size: 3rem;

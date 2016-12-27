@@ -51,8 +51,8 @@ class Database
     }
 
     public function prepare($sql, $attributes, $class_name = null, $one = false){
-        var_dump($sql);
-        var_dump($attributes);
+//        var_dump($sql);
+//        var_dump($attributes);
         $req = $this->getPDO()->prepare($sql);
         $res = $req->execute($attributes);
         if(strpos($sql, 'INSERT') === 0 || strpos($sql, 'UPDATE') === 0){
@@ -73,16 +73,32 @@ class Database
     }
 
     public function addFile($file, $sql, $attributes, $class_name = null, $one = false){
-        var_dump($file);
-        $this->prepare($sql, $attributes, $class_name, $one);
+        $size = $file['tmp_name'];
+        $taille = getimagesize($size);
+        var_dump($taille);
+        $widht = 300;
+        $reducPourcent = (($widht * 100) / $taille[0]);
+        $nouvelleHauteur = (($taille[1] * $reducPourcent) / 100);
+        echo 'Pourcentage : '. $reducPourcent;
+        var_dump($nouvelleHauteur);
+        $imageChoisie = imagecreatefromjpeg($file['tmp_name']);
+        $nouvelleImage = imagecreatetruecolor($widht, $nouvelleHauteur);
+        imagecopyresampled($nouvelleImage, $imageChoisie, 0, 0, 0, 0, $widht, $nouvelleHauteur, $taille[0], $taille[1]);
+//
+
+
+//        $this->prepare($sql, $attributes, $class_name, $one);
         $uploadDir = 'C:\wamp64\www\LDMGIT\images\\';
         $uploadFile = $uploadDir . basename($file['name']);
-
+        $imageSmall = $uploadDir . 'small-' . basename($file['name']);
+        imagejpeg($nouvelleImage, $imageSmall, 100);
+        imagedestroy($imageChoisie);
         if(move_uploaded_file($file['tmp_name'], $uploadFile)){
             return true;
         } else{
             return false;
         }
+
 
     }
 }

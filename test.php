@@ -13,7 +13,7 @@ App\Autoloader::register();
 $db = new App\Database('ldm');
 
 
-$db->query('SELECT * FROM article');
+//$db->query('SELECT * FROM article');
 
 
 $content = ob_start();
@@ -45,6 +45,9 @@ elseif($p === 'contact'){
 }
 elseif($p === 'color'){
     require 'public/color.php';
+}
+elseif($p === 'modal'){
+    require 'public/modal.php';
 }
 else{
     require 'public/modal.php';
