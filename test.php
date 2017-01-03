@@ -15,7 +15,6 @@ $db = new App\Database('ldm');
 
 //$db->query('SELECT * FROM article');
 
-
 $content = ob_start();
 
 if(isset($_GET['p'])){
@@ -33,6 +32,8 @@ elseif($p === 'single'){
 }
 elseif($p === 'admin'){
     require 'public/menu-admin.php';
+    $content = ob_get_clean();
+    require 'public/template/default-admin.php';
 }
 elseif($p === 'biographie'){
     require 'public/biographie.php';
@@ -54,4 +55,4 @@ else{
     require 'public/home.php';
 }
 $content = ob_get_clean();
-require 'public/template/default.php';
+//require 'public/template/default.php';

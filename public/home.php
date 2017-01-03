@@ -5,7 +5,7 @@
 
         <article id="article" class="container">
             <figure>
-                <img src="/images/small-<?= $post->image; ?>">
+                <img src="images/small-<?= $post->image; ?>">
             </figure>
             <div id="contenu-article">
 <!--                <h3><a href="#" data-toggle="modal" data-target="#myModal">Titre article</a></h3>-->

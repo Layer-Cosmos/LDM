@@ -1,7 +1,7 @@
 
 <?php
-var_dump($_POST);
-var_dump($_FILES);
+//var_dump($_POST);
+//var_dump($_FILES);
 if(!empty($_POST)){
 
     $db->addFile($_FILES['image'], 'INSERT INTO article(titre, contenu, image, date)
@@ -14,49 +14,45 @@ if(!empty($_POST)){
     $_POST = null;
 }
 $date = date('Y-m-d H:i:s T');
-var_dump($date);
+//var_dump($date);
 ?>
-<div class="col-lg-6">
-    <table class="table table-bordered table-hover">
-        <thead>
-        <tr>
-            <td>Id</td>
-            <td>Titre</td>
-            <td>Date</td>
-            <td>Action</td>
-        </tr>
-        </thead>
+<div class="col-lg-8">
+    <h1>Gestion d'Articles</h1>
+    <div id="ajout-article">
+        <p>Ajouter un Article</p>
+        <button type="button" class="btn btn-primary">+</button>
+        <!--<form id="formulaire-ajout-article">-->
+            <!--<label for="titre">Titre : </label><input type="text" name="titre" value="Titre">-->
+            <!--<label for="titre">Image : </label><input type="file" name="image" />-->
+            <!--<label for="contenu">Contenu : </label><textarea name="contenu"></textarea>-->
+            <!--<input type="submit" value="feu">-->
+        <!--</form>-->
+    </div>
+
+    <table class="table">
         <tbody>
-        <?php foreach($db->query('SELECT id, titre, date FROM article', 'App\Table\Article') as $post): ?>
-
             <tr>
-                <td><?= $post->id; ?></td>
-                <td><?= $post->titre; ?></td>
-                <td><?= $post->date; ?></td>
-                <td><a class="btn btn-primary">Editer</a> <a data-method="delete" href="delete.php?id=<?= $post->id; ?>" class="btn btn-danger">Supprimer</a></td>
+                <td><img src="images/africaine.jpg" width="60px"></td>
+                <td>Africaine</td>
+                <td>02/12/2016</td>
+                <td><button type="button" class="btn btn-primary">Modifier</button></td>
+                <td><button type="button" class="btn btn-danger">Supprimer</button></td>
             </tr>
-
-        <?php endforeach; ?>
+            <tr>
+                <td><img src="images/africaine.jpg" width="60px"></td>
+                <td>Africaine</td>
+                <td>02/12/2016</td>
+                <td><button type="button" class="btn btn-primary">Modifier</button></td>
+                <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+            </tr>
+            <tr>
+                <td><img src="images/africaine.jpg" width="60px"></td>
+                <td>Africaine</td>
+                <td>02/12/2016</td>
+                <td><button type="button" class="btn btn-primary">Modifier</button></td>
+                <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+            </tr>
         </tbody>
     </table>
+
 </div>
-
-
-
-<form method="post" enctype="multipart/form-data">
-    <fieldset class="col-lg-offset-1 col-lg-6">
-        <p>
-            <label for="titre">Titre :</label><br>
-            <input type="text" name="titre">
-        </p>
-        <p>
-            <label for="image">Image :</label><br>
-            <input type="file" name="image">
-        </p>
-        <p>
-            <label for="contenu">Texte :</label><br>
-             <textarea rows="4" cols="100" name="contenu"></textarea>
-        </p>
-        <p><input type="submit" value="Envoyer"></p>
-    </fieldset>
-</form>

@@ -84,10 +84,7 @@ class Database
         $imageChoisie = imagecreatefromjpeg($file['tmp_name']);
         $nouvelleImage = imagecreatetruecolor($widht, $nouvelleHauteur);
         imagecopyresampled($nouvelleImage, $imageChoisie, 0, 0, 0, 0, $widht, $nouvelleHauteur, $taille[0], $taille[1]);
-//
-
-
-//        $this->prepare($sql, $attributes, $class_name, $one);
+        $this->prepare($sql, $attributes, $class_name, $one);
         $uploadDir = 'C:\wamp64\www\LDMGIT\images\\';
         $uploadFile = $uploadDir . basename($file['name']);
         $imageSmall = $uploadDir . 'small-' . basename($file['name']);
