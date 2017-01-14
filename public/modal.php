@@ -20,6 +20,8 @@ foreach($db->prepare('SELECT * FROM article WHERE id = ?', array($_GET['id'])) a
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
+                    <a href="" id="next" class="btn btn-primary">Next</a>
+<!--                    <a href="" id="next" class="btn btn-primary">previous</a>-->
                 </div>
             </div>
         </div>

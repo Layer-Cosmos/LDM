@@ -26,6 +26,8 @@ if(isset($_GET['p'])){
 if($p === 'home'){
     require 'public/modal.php';
     require 'public/home.php';
+    $content = ob_get_clean();
+    require 'public/template/default-admin.php';
 }
 elseif($p === 'single'){
     require 'public/single.php';
@@ -53,6 +55,7 @@ elseif($p === 'modal'){
 else{
     require 'public/modal.php';
     require 'public/home.php';
+    require 'public/template/default.php';
 }
-$content = ob_get_clean();
+//$content = ob_get_clean();
 //require 'public/template/default.php';
