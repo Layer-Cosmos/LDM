@@ -18,7 +18,7 @@
 </head>
 <body>
 <header>
-    <div class="container col-lg-3" id="menu">
+    <div class="container col-sm-12 col-lg-3" id="menu">
         <img class="logo" src="images/logoldm.png" alt="Logo Laure De Malibran"/>
         <nav id="onglet-menu">
             <ul>

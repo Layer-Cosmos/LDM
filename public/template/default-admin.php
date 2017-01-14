@@ -110,10 +110,10 @@
         <nav id="onglet-menu">
             <ul>
                 <a href="test.php?p=admin"><li class="onglet-choisi">Gestion des Articles</li></a>
-                <a href="test.php?p=admin"><li>Gestion des Commentaires</li></a>
-                <a href="biographie.php"><li>Gestion de la Biographie</li></a>
-                <a href="galerie.php"><li>Gestion de la Couleur</li></a>
-                <a href="contact.php"><li>Statistique</li></a>
+                <a href="test.php?p=admin-commentaire"><li>Gestion des Commentaires</li></a>
+                <a href="test.php?p=admin-biographie"><li>Gestion de la Biographie</li></a>
+                <a href="test.php?p=admin-couleur"><li>Gestion de la Couleur</li></a>
+                <a href="test.php?p=admin-statistique"><li>Statistique</li></a>
             </ul>
         </nav>
         <figure id="reseaux-sociaux">

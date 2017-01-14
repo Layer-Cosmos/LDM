@@ -46,11 +46,23 @@ elseif($p === 'galerie'){
 elseif($p === 'contact'){
     require  'public/contact.php';
 }
-elseif($p === 'color'){
+elseif($p === 'admin-couleur'){
     require 'public/color.php';
+    $content = ob_get_clean();
+    require 'public/template/default-admin.php';
 }
 elseif($p === 'modal'){
     require 'public/modal.php';
+}
+elseif($p === 'admin-commentaire'){
+    require 'public/admin-commentaire.php';
+    $content = ob_get_clean();
+    require 'public/template/default-admin.php';
+}
+elseif($p === 'admin-biographie'){
+    require 'public/admin-biographie.php';
+    $content = ob_get_clean();
+    require 'public/template/default-admin.php';
 }
 else{
     require 'public/modal.php';

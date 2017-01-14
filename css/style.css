@@ -262,23 +262,36 @@ fieldset p{
 
 
 /*PAGE GESTION D'ARTICLES*/
-#ajout-article{
+#section-ajout-article{
     padding: 30px;
     background-color: white;
     box-shadow: 8px 8px 12px #929292;
     margin-bottom: 20px;
+}
+#titre-ajout-article{
     display: flex;
     justify-content: space-between;
 }
-#ajout-article p{
+#titre-ajout-article p{
     font-size: 2.5rem;
 }
-#ajout-article button{
+#titre-ajout-article button{
     width: 50px;
     height: 50px;
     font-size: 2.5rem;
 }
+#formulaire-ajout-article{
 
+}
+#formulaire-ajout-article .label-formulaire-ajout-article{
+    font-size: 2rem;
+    margin-top: 5px;
+    color: #0fb5b5;
+}
+.label-formulaire-ajout-article textarea{
+    width: 500px;
+    height: 200px;
+}
 .article-a-gerer {
     border-bottom: 1px solid #0fb5b5;
     /*vertical-align: middle;*/
@@ -298,15 +311,11 @@ fieldset p{
 .article-a-gerer td{
 
 }
-
-
-
 @media (min-width: @screen-sm-min) {
-
+    #onglet-menu li{
+        display: inline;
+    }
 }
 @media (min-width: @screen-md-min) {
-
-}
-@media (min-width: @screen-lg-min) {
 
 }
